@@ -1,15 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.js"
-    }
-  ]
+  "name": "fragment-proxy",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
 }
