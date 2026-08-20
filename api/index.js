@@ -10,7 +10,8 @@ module.exports = async (req, res) => {
     return res.end(JSON.stringify({ status: "ERROR", message: "No username provided" }));
   }
 
-  const url = `https://fragment.com{username}`;
+  const url = `https://fragment.com{username}/`;
+
 
   try {
     const response = await fetch(url, {
